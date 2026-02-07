@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  color-scheme: light;
+}
+
+/* @theme is a Tailwind CSS v4 feature for inline theme configuration */
+/* eslint-disable-next-line at-rule-no-unknown */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  --color-sorsuMaroon: #800000;
+  
+  --color-maroon-50: #fff1f1;
+  --color-maroon-100: #ffe1e1;
+  --color-maroon-200: #ffc7c7;
+  --color-maroon-300: #ffa3a3;
+  --color-maroon-400: #ff7070;
+  --color-maroon-500: #ff3d3d;
+  --color-maroon-600: #e62e2e;
+  --color-maroon-700: #bf2121;
+  --color-maroon-800: #991b1b;
+  --color-maroon-900: #800000;
+  --color-maroon-950: #450a0a;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+}
